@@ -59,4 +59,13 @@ En html agregue estos radiobuttoms
 <input type="radio" name="sexo" id="Hombre" value="Hombre">Hombre<br>
 			    <input type="radio" name="sexo" id="Mujer" value="Mujer">Mujer<br>
 
+
+
+
+
+
+
+Imput para telefono
+<input type="text" id="telef">
+
  
