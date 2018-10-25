@@ -13,6 +13,45 @@ function validarradio(){
     }
 }
 
+
+
+function validartel(){
+	 var tel = document.getElementById("telef").value;
+	 var tell = tel.length;
+     // if (tel.length==0){
+     // 	alert("Este campo es obligatorio");
+     // 	return false;
+     // }
+     // else{
+
+     	if (tell==10 || tell ==7  ) {
+     		switch(tell){
+     			case 10:{
+     				alert("su número es móvil");
+     				return false;
+     			}
+     				break;
+     			case 7:{
+     				var fijo = '031'+tel;
+     				document.getElementById("telef").innerHTML='<input type="text" id="telef" value="'+fijo+'">';
+     				alert(fijo);
+     				return false;
+     			}
+     				break;
+
+     		}
+     		// if (tel.length>10) {
+     		// 	alert("El numero de celular debe tener 10 numeros, no mas");
+     		// 	return false;
+     		// }
+     		
+     	}else{
+     		alert("no es ni 10 ni 7")
+     		return false;
+     	}
+     // }
+}
+
 ---------------------------------------------------------------------------------------------------------------------------
 
 En html agregue estos radiobuttoms
