@@ -1,0 +1,11 @@
+body{
+    /* background-image: url("../img/uno.jpg") */
+}
+
+.fondo_gris {
+    background-color: red;
+}
+
+.fondo_azul {
+    background-color: blue;
+}

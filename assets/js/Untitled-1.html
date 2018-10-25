@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text">
+    <input type="text" onkeydown="holo(event)">
+
+    <button >enviar</button>
+    <p>hora</p>
+    <!-- <button>enviar2</button> -->
+
+    <script>
+        var holo =function(e){
+            var x = e.which;
+            var arroba =String.fromCharCode(64);
+            console.log(x,arroba);
+        }
+        // z = 15;
+        
+        // if(z){
+            //     console.log('cierto')
+            // }  else {
+                //     console.log('falso')
+                
+                // } 
+                // var h = 15;
+                
+                // function saludar(){
+                    //         var h = 'hola';
+                    //         console.log(h);
+                    //         // var z = 23456;
+                    //     }
+                    
+                    
+                    // var saludar = function(){
+                    //     console.log('hola')
+                    // }
+                    
+                    // saludar();
+
+                    var obj = {a:7, 
+                                b:{
+                                    a:5,b:6
+                                },
+                                c: function(num){
+                                    console.log(num + 5)
+                                }
+                            };
+                        
+                    // console.log(obj.c(5));
+
+                // var boton = document.getElementsByTagName('button')[0];
+                var boton = document.getElementsByTagName('button')[0];
+
+                var input = document.getElementsByTagName('input')[0];
+            boton.addEventListener("click", function(event){
+                document.getElementsByTagName("p")[0].innerHTML="<p>"+Date()+"</p>";
+                console.log(event)
+                var valor = input.value;
+                valor = parseInt(valor);
+                obj.c(valor);
+            });
+        // console.log(h);
+    </script>
+</body>
+</html>
